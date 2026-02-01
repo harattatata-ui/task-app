@@ -32,7 +32,7 @@ let isDarkMode =  false;
 
 darkToggle.addEventListener("click" , () => {
     if(isDarkMode){
-        document.body.classList.remove("dark");
+        document.body.classList.remove  ("dark");
         darkToggle.textContent = "🌙 ダークモード";
         isDarkMode = false;
     }else{
