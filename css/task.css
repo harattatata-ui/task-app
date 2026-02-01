@@ -156,7 +156,7 @@ li button:hover {
     min-width: 0;
   }
 
-  .input-area input[type="text"] { flex: 2; }
+  .input-area input[type="text"] { flex: 3; }
   .input-area input[type="date"] { flex: 1; }
   #addTask { flex: 0.5; white-space: nowrap; }
 
