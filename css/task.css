@@ -143,10 +143,6 @@ li button:hover {
     padding: 20px;
   }
 
-  .input-area {
-    flex-direction: column;
-  }
-
   .input-area input,
   .input-area button {
     width: 100%;
