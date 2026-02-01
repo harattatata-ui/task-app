@@ -26,6 +26,7 @@ h1 {
   display: flex;
   gap: 8px;
   margin-bottom: 20px;
+  flex-wrap: nowrap;
 }
 
 /* やること入力 → いちばん広く */
@@ -50,6 +51,7 @@ h1 {
 #addTask {
   flex: 1;
   white-space: nowrap;
+   min-width: 0; 
 }
 
 
