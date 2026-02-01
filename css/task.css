@@ -24,19 +24,34 @@ h1 {
 /* ===== 入力エリア ===== */
 .input-area {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 20px;
 }
 
-.input-area input[type="text"],
-.input-area input[type="date"] {
-  flex: 1;
+/* やること入力 → いちばん広く */
+.input-area input[type="text"] {
+  flex: 2;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #cbd5e1;
   font-size: 14px;
 }
+
+/* 日付 → 中くらい */
+.input-area input[type="date"] {
+  flex: 1.2;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+/* 追加ボタン → コンパクト */
+#addTask {
+  flex: 1;
+  white-space: nowrap;
+}
+
 
 /* ===== 追加ボタン ===== */
 #addTask {
