@@ -115,3 +115,39 @@ li button:hover {
 .overdue {
   background: #fee2e2 !important;
 }
+
+/* =========================
+   📱 スマホ用レイアウト
+========================= */
+@media (max-width: 600px) {
+
+  .container {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .input-area {
+    flex-direction: column;
+  }
+
+  .input-area input,
+  .input-area button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  li button {
+    align-self: flex-end;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
