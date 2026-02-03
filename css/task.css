@@ -2,17 +2,19 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
   color: #0f172a;
+   font-family: 'Inter', sans-serif;
 }
 
 .container {
   max-width: 700px;
   margin: 40px auto;
-  background: white;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 15px 40px rgba(30, 64, 175, 0.15);
 }
 
 /* ===== タイトル ===== */
@@ -61,14 +63,20 @@ h1 {
   color: white;
   border: none;
   padding: 10px 18px;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
   transition: 0.2s;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
 }
 
 #addTask:hover {
   background: #2563eb;
+   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+#addTask:active {
+  transform: scale(0.96);
 }
 
 /* ===== 日付見出し ===== */
@@ -90,14 +98,16 @@ li {
   justify-content: space-between;
   align-items: center;
   background: #f8fafc;
-  padding: 10px 14px;
-  border-radius: 10px;
+  padding: 12px 16px;
+  border-radius: 14px;
   margin-bottom: 8px;
   transition: 0.2s;
+  border: 1px solid #e0ecff;
 }
 
 li:hover {
   transform: scale(1.01);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.12);
 }
 
 /* ===== 左側（チェック＋テキスト） ===== */
@@ -118,7 +128,7 @@ li button {
   border: none;
   color: white;
   padding: 6px 10px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 12px;
   transition: 0.2s;
@@ -132,6 +142,15 @@ li button:hover {
 .overdue {
   background: #fee2e2 !important;
 }
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
 
 /* =========================
    📱 スマホ用レイアウト
